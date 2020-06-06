@@ -1,3 +1,8 @@
 
 Logging/lnt-springboot-logback/.DS_Store
-.DS_Store
+**/.DS_Store
+**/AbstractClassUsage.iml
+**/vcs.xml
+**/modules.xml
+**/misc.xml
+*.iml
