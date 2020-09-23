@@ -9,7 +9,7 @@
 			"name": "SharedDocs",
 			"item": [
 				{
-					"name": "SitePages Files List",
+					"name": "SitePages Files List- Test",
 					"request": {
 						"method": "GET",
 						"header": [
