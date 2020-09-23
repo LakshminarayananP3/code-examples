@@ -49,7 +49,7 @@
 					"response": []
 				},
 				{
-					"name": "SitePages Files List Copy",
+					"name": "SitePages Files List Copy - Test",
 					"request": {
 						"method": "GET",
 						"header": [
