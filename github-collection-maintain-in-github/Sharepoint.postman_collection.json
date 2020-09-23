@@ -1,0 +1,1727 @@
+{
+	"info": {
+		"_postman_id": "c121889f-4bf6-4cf9-98ae-2dca7d005245",
+		"name": "Sharepoint",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "SharedDocs",
+			"item": [
+				{
+					"name": "SitePages Files List",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "{{rtFa}}",
+								"type": "text"
+							},
+							{
+								"key": "Cookie",
+								"value": "{{FedAuth}}",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json;odata=verbose",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/_api/Web/{{relativepath}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"_api",
+								"Web",
+								"{{relativepath}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SitePages Files List Copy",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "jLc%2BLrJ14hb4DOZ3Hp9U0qNv3i%2Bg9pnnisvyY9x0yZUmOTUwQUY0MTEtQTg2OS00RkRCLUJFODUtOTI2REJBQkUzQzRGB1N%2BeFcA%2B9oqcKSEWLuWGkbxiEwsCR7BkBXb2USXyIvY%2BixpbwrJvKMFlCf8vlMTrQsRqXnfayRnebQhfFw%2BujdE5yZZpxfQ4ue9sAySNsJebIdG%2FgWOv%2FoH1EjSbZ%2Btq%2FEWDyO08GtNs4BBqkW2sDPU1Lq%2B52ykKTw9avZWTGoq3SomL80isbYcG7qaJz5PQ6B4d3DYEdp99s7ZDva%2Fq4NnuXBkAgRZpVrgiivLgbDlR7ExEoNbFD7GZVpgiZ4kF1xop%2BVzlZFujdJCdFJBmC129vbkwK2oai4CMkstgkspePqokBF6Ef7wMK%2Fpg%2Frc1t3mxyjf%2B24PmEzFuBP77kUAAAA%3D",
+								"type": "text"
+							},
+							{
+								"key": "Cookie",
+								"value": "77u%2FPD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48U1A%2BVjYsMGguZnxtZW1iZXJzaGlwfDEwMDMzZmZmOTllNWZiMjhAbGl2ZS5jb20sMCMuZnxtZW1iZXJzaGlwfGxha3NobWkubmFyYXlhbmFuQHBsYXRmb3JtM3NvbHV0aW9ucy5jb20sMTMyMTIzMTQwODgwMDAwMDAwLDEzMjEyMjQxODYxMDAwMDAwMCwxMzIxMjQwMDU3NzAwNTE0MTIsMC4wLjAuMCwyLDk1MGFmNDExLWE4NjktNGZkYi1iZTg1LTkyNmRiYWJlM2M0ZiwsLDE3Y2MwMTlmLTAwZDUtOTAwMC03ZWEyLTBhYzc0YmQ4ZDI4NSwxN2NjMDE5Zi0wMGQ1LTkwMDAtN2VhMi0wYWM3NGJkOGQyODUsLDAsMCwwLCwsLGpYTHpnU1o2QVdmL3A2bTEzZ2VQTWErT3VVSExyL1EyalRxZVZldzRFbmp5aXVTRzhuYmdkVDZQY3Q0cVdKRWNrYXZqN09aaTNNZ295a3FNR1NTUzdpdmcycDBxRGppbS9FT0ZUckh2MTZWQXVEVmZwaW9aZ2NXVkQ2UC9TaktpalM0enpCOXQwanE5OWF2cDA5ZHhKSFdhTjczYUs1Wnl2MjJzM05pQzFqVmJhK1JUR25HejRsOC9vc3F0VWNHQnlaNTZaSHdodkVTM1ROSXFiVmp2MGNCWVNDVWVwVWxWVEZTMUtrd1JGbXQ1d01kWFhLdkZUZjZtd0dmSjFDa0tiREhnRWFpZVFqMWRiazdnUkNiZ0tKSlJpN204ZHVHcFBNREtBUXRrMVNYUllDTnN1VmZYUlYzbG5CLzFqVlRla2Q5dC91d1lxYXBQdER6TnlWemZFZz09PC9TUD4%3D",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/xml",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/xml",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://platform3solutionsllc.sharepoint.com/_api/Web/GetFolderByServerRelativePath(decodedurl='/Shared%20Documents/ETL')/Folders",
+							"protocol": "https",
+							"host": [
+								"platform3solutionsllc",
+								"sharepoint",
+								"com"
+							],
+							"path": [
+								"_api",
+								"Web",
+								"GetFolderByServerRelativePath(decodedurl='",
+								"Shared%20Documents",
+								"ETL')",
+								"Folders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SitePages/Author",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "jLc%2BLrJ14hb4DOZ3Hp9U0qNv3i%2Bg9pnnisvyY9x0yZUmOTUwQUY0MTEtQTg2OS00RkRCLUJFODUtOTI2REJBQkUzQzRGB1N%2BeFcA%2B9oqcKSEWLuWGkbxiEwsCR7BkBXb2USXyIvY%2BixpbwrJvKMFlCf8vlMTrQsRqXnfayRnebQhfFw%2BujdE5yZZpxfQ4ue9sAySNsJebIdG%2FgWOv%2FoH1EjSbZ%2Btq%2FEWDyO08GtNs4BBqkW2sDPU1Lq%2B52ykKTw9avZWTGoq3SomL80isbYcG7qaJz5PQ6B4d3DYEdp99s7ZDva%2Fq4NnuXBkAgRZpVrgiivLgbDlR7ExEoNbFD7GZVpgiZ4kF1xop%2BVzlZFujdJCdFJBmC129vbkwK2oai4CMkstgkspePqokBF6Ef7wMK%2Fpg%2Frc1t3mxyjf%2B24PmEzFuBP77kUAAAA%3D",
+								"type": "text"
+							},
+							{
+								"key": "Cookie",
+								"value": "77u%2FPD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48U1A%2BVjYsMGguZnxtZW1iZXJzaGlwfDEwMDMzZmZmOTllNWZiMjhAbGl2ZS5jb20sMCMuZnxtZW1iZXJzaGlwfGxha3NobWkubmFyYXlhbmFuQHBsYXRmb3JtM3NvbHV0aW9ucy5jb20sMTMyMTIzMTQwODgwMDAwMDAwLDEzMjEyMjQxODYxMDAwMDAwMCwxMzIxMjQwMDU3NzAwNTE0MTIsMC4wLjAuMCwyLDk1MGFmNDExLWE4NjktNGZkYi1iZTg1LTkyNmRiYWJlM2M0ZiwsLDE3Y2MwMTlmLTAwZDUtOTAwMC03ZWEyLTBhYzc0YmQ4ZDI4NSwxN2NjMDE5Zi0wMGQ1LTkwMDAtN2VhMi0wYWM3NGJkOGQyODUsLDAsMCwwLCwsLGpYTHpnU1o2QVdmL3A2bTEzZ2VQTWErT3VVSExyL1EyalRxZVZldzRFbmp5aXVTRzhuYmdkVDZQY3Q0cVdKRWNrYXZqN09aaTNNZ295a3FNR1NTUzdpdmcycDBxRGppbS9FT0ZUckh2MTZWQXVEVmZwaW9aZ2NXVkQ2UC9TaktpalM0enpCOXQwanE5OWF2cDA5ZHhKSFdhTjczYUs1Wnl2MjJzM05pQzFqVmJhK1JUR25HejRsOC9vc3F0VWNHQnlaNTZaSHdodkVTM1ROSXFiVmp2MGNCWVNDVWVwVWxWVEZTMUtrd1JGbXQ1d01kWFhLdkZUZjZtd0dmSjFDa0tiREhnRWFpZVFqMWRiazdnUkNiZ0tKSlJpN204ZHVHcFBNREtBUXRrMVNYUllDTnN1VmZYUlYzbG5CLzFqVlRla2Q5dC91d1lxYXBQdER6TnlWemZFZz09PC9TUD4%3D",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json;odata=verbose",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json;odata=verbose",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/_api/Web/{{relativepath}}/Author",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"_api",
+								"Web",
+								"{{relativepath}}",
+								"Author"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SitePages/CheckedOutByUser",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "jLc%2BLrJ14hb4DOZ3Hp9U0qNv3i%2Bg9pnnisvyY9x0yZUmOTUwQUY0MTEtQTg2OS00RkRCLUJFODUtOTI2REJBQkUzQzRGB1N%2BeFcA%2B9oqcKSEWLuWGkbxiEwsCR7BkBXb2USXyIvY%2BixpbwrJvKMFlCf8vlMTrQsRqXnfayRnebQhfFw%2BujdE5yZZpxfQ4ue9sAySNsJebIdG%2FgWOv%2FoH1EjSbZ%2Btq%2FEWDyO08GtNs4BBqkW2sDPU1Lq%2B52ykKTw9avZWTGoq3SomL80isbYcG7qaJz5PQ6B4d3DYEdp99s7ZDva%2Fq4NnuXBkAgRZpVrgiivLgbDlR7ExEoNbFD7GZVpgiZ4kF1xop%2BVzlZFujdJCdFJBmC129vbkwK2oai4CMkstgkspePqokBF6Ef7wMK%2Fpg%2Frc1t3mxyjf%2B24PmEzFuBP77kUAAAA%3D",
+								"type": "text"
+							},
+							{
+								"key": "Cookie",
+								"value": "77u%2FPD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48U1A%2BVjYsMGguZnxtZW1iZXJzaGlwfDEwMDMzZmZmOTllNWZiMjhAbGl2ZS5jb20sMCMuZnxtZW1iZXJzaGlwfGxha3NobWkubmFyYXlhbmFuQHBsYXRmb3JtM3NvbHV0aW9ucy5jb20sMTMyMTIzMTQwODgwMDAwMDAwLDEzMjEyMjQxODYxMDAwMDAwMCwxMzIxMjQwMDU3NzAwNTE0MTIsMC4wLjAuMCwyLDk1MGFmNDExLWE4NjktNGZkYi1iZTg1LTkyNmRiYWJlM2M0ZiwsLDE3Y2MwMTlmLTAwZDUtOTAwMC03ZWEyLTBhYzc0YmQ4ZDI4NSwxN2NjMDE5Zi0wMGQ1LTkwMDAtN2VhMi0wYWM3NGJkOGQyODUsLDAsMCwwLCwsLGpYTHpnU1o2QVdmL3A2bTEzZ2VQTWErT3VVSExyL1EyalRxZVZldzRFbmp5aXVTRzhuYmdkVDZQY3Q0cVdKRWNrYXZqN09aaTNNZ295a3FNR1NTUzdpdmcycDBxRGppbS9FT0ZUckh2MTZWQXVEVmZwaW9aZ2NXVkQ2UC9TaktpalM0enpCOXQwanE5OWF2cDA5ZHhKSFdhTjczYUs1Wnl2MjJzM05pQzFqVmJhK1JUR25HejRsOC9vc3F0VWNHQnlaNTZaSHdodkVTM1ROSXFiVmp2MGNCWVNDVWVwVWxWVEZTMUtrd1JGbXQ1d01kWFhLdkZUZjZtd0dmSjFDa0tiREhnRWFpZVFqMWRiazdnUkNiZ0tKSlJpN204ZHVHcFBNREtBUXRrMVNYUllDTnN1VmZYUlYzbG5CLzFqVlRla2Q5dC91d1lxYXBQdER6TnlWemZFZz09PC9TUD4%3D",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json;odata=verbose",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/_api/Web/{{relativepath}}/CheckedOutByUser",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"_api",
+								"Web",
+								"{{relativepath}}",
+								"CheckedOutByUser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SitePages/EffectiveInformationRightsManagementSettings",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"type": "text",
+								"value": "jLc%2BLrJ14hb4DOZ3Hp9U0qNv3i%2Bg9pnnisvyY9x0yZUmOTUwQUY0MTEtQTg2OS00RkRCLUJFODUtOTI2REJBQkUzQzRGB1N%2BeFcA%2B9oqcKSEWLuWGkbxiEwsCR7BkBXb2USXyIvY%2BixpbwrJvKMFlCf8vlMTrQsRqXnfayRnebQhfFw%2BujdE5yZZpxfQ4ue9sAySNsJebIdG%2FgWOv%2FoH1EjSbZ%2Btq%2FEWDyO08GtNs4BBqkW2sDPU1Lq%2B52ykKTw9avZWTGoq3SomL80isbYcG7qaJz5PQ6B4d3DYEdp99s7ZDva%2Fq4NnuXBkAgRZpVrgiivLgbDlR7ExEoNbFD7GZVpgiZ4kF1xop%2BVzlZFujdJCdFJBmC129vbkwK2oai4CMkstgkspePqokBF6Ef7wMK%2Fpg%2Frc1t3mxyjf%2B24PmEzFuBP77kUAAAA%3D"
+							},
+							{
+								"key": "Cookie",
+								"type": "text",
+								"value": "77u%2FPD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48U1A%2BVjYsMGguZnxtZW1iZXJzaGlwfDEwMDMzZmZmOTllNWZiMjhAbGl2ZS5jb20sMCMuZnxtZW1iZXJzaGlwfGxha3NobWkubmFyYXlhbmFuQHBsYXRmb3JtM3NvbHV0aW9ucy5jb20sMTMyMTIzMTQwODgwMDAwMDAwLDEzMjEyMjQxODYxMDAwMDAwMCwxMzIxMjQwMDU3NzAwNTE0MTIsMC4wLjAuMCwyLDk1MGFmNDExLWE4NjktNGZkYi1iZTg1LTkyNmRiYWJlM2M0ZiwsLDE3Y2MwMTlmLTAwZDUtOTAwMC03ZWEyLTBhYzc0YmQ4ZDI4NSwxN2NjMDE5Zi0wMGQ1LTkwMDAtN2VhMi0wYWM3NGJkOGQyODUsLDAsMCwwLCwsLGpYTHpnU1o2QVdmL3A2bTEzZ2VQTWErT3VVSExyL1EyalRxZVZldzRFbmp5aXVTRzhuYmdkVDZQY3Q0cVdKRWNrYXZqN09aaTNNZ295a3FNR1NTUzdpdmcycDBxRGppbS9FT0ZUckh2MTZWQXVEVmZwaW9aZ2NXVkQ2UC9TaktpalM0enpCOXQwanE5OWF2cDA5ZHhKSFdhTjczYUs1Wnl2MjJzM05pQzFqVmJhK1JUR25HejRsOC9vc3F0VWNHQnlaNTZaSHdodkVTM1ROSXFiVmp2MGNCWVNDVWVwVWxWVEZTMUtrd1JGbXQ1d01kWFhLdkZUZjZtd0dmSjFDa0tiREhnRWFpZVFqMWRiazdnUkNiZ0tKSlJpN204ZHVHcFBNREtBUXRrMVNYUllDTnN1VmZYUlYzbG5CLzFqVlRla2Q5dC91d1lxYXBQdER6TnlWemZFZz09PC9TUD4%3D"
+							},
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json;odata=verbose"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/_api/Web/{{relativepath}}/EffectiveInformationRightsManagementSettings",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"_api",
+								"Web",
+								"{{relativepath}}",
+								"EffectiveInformationRightsManagementSettings"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SitePages/ListItemAllFields",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "jLc%2BLrJ14hb4DOZ3Hp9U0qNv3i%2Bg9pnnisvyY9x0yZUmOTUwQUY0MTEtQTg2OS00RkRCLUJFODUtOTI2REJBQkUzQzRGB1N%2BeFcA%2B9oqcKSEWLuWGkbxiEwsCR7BkBXb2USXyIvY%2BixpbwrJvKMFlCf8vlMTrQsRqXnfayRnebQhfFw%2BujdE5yZZpxfQ4ue9sAySNsJebIdG%2FgWOv%2FoH1EjSbZ%2Btq%2FEWDyO08GtNs4BBqkW2sDPU1Lq%2B52ykKTw9avZWTGoq3SomL80isbYcG7qaJz5PQ6B4d3DYEdp99s7ZDva%2Fq4NnuXBkAgRZpVrgiivLgbDlR7ExEoNbFD7GZVpgiZ4kF1xop%2BVzlZFujdJCdFJBmC129vbkwK2oai4CMkstgkspePqokBF6Ef7wMK%2Fpg%2Frc1t3mxyjf%2B24PmEzFuBP77kUAAAA%3D",
+								"type": "text"
+							},
+							{
+								"key": "Cookie",
+								"value": "77u%2FPD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48U1A%2BVjYsMGguZnxtZW1iZXJzaGlwfDEwMDMzZmZmOTllNWZiMjhAbGl2ZS5jb20sMCMuZnxtZW1iZXJzaGlwfGxha3NobWkubmFyYXlhbmFuQHBsYXRmb3JtM3NvbHV0aW9ucy5jb20sMTMyMTIzMTQwODgwMDAwMDAwLDEzMjEyMjQxODYxMDAwMDAwMCwxMzIxMjQwMDU3NzAwNTE0MTIsMC4wLjAuMCwyLDk1MGFmNDExLWE4NjktNGZkYi1iZTg1LTkyNmRiYWJlM2M0ZiwsLDE3Y2MwMTlmLTAwZDUtOTAwMC03ZWEyLTBhYzc0YmQ4ZDI4NSwxN2NjMDE5Zi0wMGQ1LTkwMDAtN2VhMi0wYWM3NGJkOGQyODUsLDAsMCwwLCwsLGpYTHpnU1o2QVdmL3A2bTEzZ2VQTWErT3VVSExyL1EyalRxZVZldzRFbmp5aXVTRzhuYmdkVDZQY3Q0cVdKRWNrYXZqN09aaTNNZ295a3FNR1NTUzdpdmcycDBxRGppbS9FT0ZUckh2MTZWQXVEVmZwaW9aZ2NXVkQ2UC9TaktpalM0enpCOXQwanE5OWF2cDA5ZHhKSFdhTjczYUs1Wnl2MjJzM05pQzFqVmJhK1JUR25HejRsOC9vc3F0VWNHQnlaNTZaSHdodkVTM1ROSXFiVmp2MGNCWVNDVWVwVWxWVEZTMUtrd1JGbXQ1d01kWFhLdkZUZjZtd0dmSjFDa0tiREhnRWFpZVFqMWRiazdnUkNiZ0tKSlJpN204ZHVHcFBNREtBUXRrMVNYUllDTnN1VmZYUlYzbG5CLzFqVlRla2Q5dC91d1lxYXBQdER6TnlWemZFZz09PC9TUD4%3D",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json;odata=verbose",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/_api/Web/{{relativepath}}/ListItemAllFields",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"_api",
+								"Web",
+								"{{relativepath}}",
+								"ListItemAllFields"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SitePages/ListItemAllFields/ContentType",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "jLc%2BLrJ14hb4DOZ3Hp9U0qNv3i%2Bg9pnnisvyY9x0yZUmOTUwQUY0MTEtQTg2OS00RkRCLUJFODUtOTI2REJBQkUzQzRGB1N%2BeFcA%2B9oqcKSEWLuWGkbxiEwsCR7BkBXb2USXyIvY%2BixpbwrJvKMFlCf8vlMTrQsRqXnfayRnebQhfFw%2BujdE5yZZpxfQ4ue9sAySNsJebIdG%2FgWOv%2FoH1EjSbZ%2Btq%2FEWDyO08GtNs4BBqkW2sDPU1Lq%2B52ykKTw9avZWTGoq3SomL80isbYcG7qaJz5PQ6B4d3DYEdp99s7ZDva%2Fq4NnuXBkAgRZpVrgiivLgbDlR7ExEoNbFD7GZVpgiZ4kF1xop%2BVzlZFujdJCdFJBmC129vbkwK2oai4CMkstgkspePqokBF6Ef7wMK%2Fpg%2Frc1t3mxyjf%2B24PmEzFuBP77kUAAAA%3D",
+								"type": "text"
+							},
+							{
+								"key": "Cookie",
+								"value": "77u%2FPD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48U1A%2BVjYsMGguZnxtZW1iZXJzaGlwfDEwMDMzZmZmOTllNWZiMjhAbGl2ZS5jb20sMCMuZnxtZW1iZXJzaGlwfGxha3NobWkubmFyYXlhbmFuQHBsYXRmb3JtM3NvbHV0aW9ucy5jb20sMTMyMTIzMTQwODgwMDAwMDAwLDEzMjEyMjQxODYxMDAwMDAwMCwxMzIxMjQwMDU3NzAwNTE0MTIsMC4wLjAuMCwyLDk1MGFmNDExLWE4NjktNGZkYi1iZTg1LTkyNmRiYWJlM2M0ZiwsLDE3Y2MwMTlmLTAwZDUtOTAwMC03ZWEyLTBhYzc0YmQ4ZDI4NSwxN2NjMDE5Zi0wMGQ1LTkwMDAtN2VhMi0wYWM3NGJkOGQyODUsLDAsMCwwLCwsLGpYTHpnU1o2QVdmL3A2bTEzZ2VQTWErT3VVSExyL1EyalRxZVZldzRFbmp5aXVTRzhuYmdkVDZQY3Q0cVdKRWNrYXZqN09aaTNNZ295a3FNR1NTUzdpdmcycDBxRGppbS9FT0ZUckh2MTZWQXVEVmZwaW9aZ2NXVkQ2UC9TaktpalM0enpCOXQwanE5OWF2cDA5ZHhKSFdhTjczYUs1Wnl2MjJzM05pQzFqVmJhK1JUR25HejRsOC9vc3F0VWNHQnlaNTZaSHdodkVTM1ROSXFiVmp2MGNCWVNDVWVwVWxWVEZTMUtrd1JGbXQ1d01kWFhLdkZUZjZtd0dmSjFDa0tiREhnRWFpZVFqMWRiazdnUkNiZ0tKSlJpN204ZHVHcFBNREtBUXRrMVNYUllDTnN1VmZYUlYzbG5CLzFqVlRla2Q5dC91d1lxYXBQdER6TnlWemZFZz09PC9TUD4%3D",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json;odata=verbose",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/_api/Web/{{relativepath}}/ListItemAllFields",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"_api",
+								"Web",
+								"{{relativepath}}",
+								"ListItemAllFields"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SitePages/LockedByUser",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "jLc%2BLrJ14hb4DOZ3Hp9U0qNv3i%2Bg9pnnisvyY9x0yZUmOTUwQUY0MTEtQTg2OS00RkRCLUJFODUtOTI2REJBQkUzQzRGB1N%2BeFcA%2B9oqcKSEWLuWGkbxiEwsCR7BkBXb2USXyIvY%2BixpbwrJvKMFlCf8vlMTrQsRqXnfayRnebQhfFw%2BujdE5yZZpxfQ4ue9sAySNsJebIdG%2FgWOv%2FoH1EjSbZ%2Btq%2FEWDyO08GtNs4BBqkW2sDPU1Lq%2B52ykKTw9avZWTGoq3SomL80isbYcG7qaJz5PQ6B4d3DYEdp99s7ZDva%2Fq4NnuXBkAgRZpVrgiivLgbDlR7ExEoNbFD7GZVpgiZ4kF1xop%2BVzlZFujdJCdFJBmC129vbkwK2oai4CMkstgkspePqokBF6Ef7wMK%2Fpg%2Frc1t3mxyjf%2B24PmEzFuBP77kUAAAA%3D",
+								"type": "text"
+							},
+							{
+								"key": "Cookie",
+								"value": "77u%2FPD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48U1A%2BVjYsMGguZnxtZW1iZXJzaGlwfDEwMDMzZmZmOTllNWZiMjhAbGl2ZS5jb20sMCMuZnxtZW1iZXJzaGlwfGxha3NobWkubmFyYXlhbmFuQHBsYXRmb3JtM3NvbHV0aW9ucy5jb20sMTMyMTIzMTQwODgwMDAwMDAwLDEzMjEyMjQxODYxMDAwMDAwMCwxMzIxMjQwMDU3NzAwNTE0MTIsMC4wLjAuMCwyLDk1MGFmNDExLWE4NjktNGZkYi1iZTg1LTkyNmRiYWJlM2M0ZiwsLDE3Y2MwMTlmLTAwZDUtOTAwMC03ZWEyLTBhYzc0YmQ4ZDI4NSwxN2NjMDE5Zi0wMGQ1LTkwMDAtN2VhMi0wYWM3NGJkOGQyODUsLDAsMCwwLCwsLGpYTHpnU1o2QVdmL3A2bTEzZ2VQTWErT3VVSExyL1EyalRxZVZldzRFbmp5aXVTRzhuYmdkVDZQY3Q0cVdKRWNrYXZqN09aaTNNZ295a3FNR1NTUzdpdmcycDBxRGppbS9FT0ZUckh2MTZWQXVEVmZwaW9aZ2NXVkQ2UC9TaktpalM0enpCOXQwanE5OWF2cDA5ZHhKSFdhTjczYUs1Wnl2MjJzM05pQzFqVmJhK1JUR25HejRsOC9vc3F0VWNHQnlaNTZaSHdodkVTM1ROSXFiVmp2MGNCWVNDVWVwVWxWVEZTMUtrd1JGbXQ1d01kWFhLdkZUZjZtd0dmSjFDa0tiREhnRWFpZVFqMWRiazdnUkNiZ0tKSlJpN204ZHVHcFBNREtBUXRrMVNYUllDTnN1VmZYUlYzbG5CLzFqVlRla2Q5dC91d1lxYXBQdER6TnlWemZFZz09PC9TUD4%3D",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json;odata=verbose",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/_api/Web/{{relativepath}}/LockedByUser",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"_api",
+								"Web",
+								"{{relativepath}}",
+								"LockedByUser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SitePages/ModifiedBy",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "jLc%2BLrJ14hb4DOZ3Hp9U0qNv3i%2Bg9pnnisvyY9x0yZUmOTUwQUY0MTEtQTg2OS00RkRCLUJFODUtOTI2REJBQkUzQzRGB1N%2BeFcA%2B9oqcKSEWLuWGkbxiEwsCR7BkBXb2USXyIvY%2BixpbwrJvKMFlCf8vlMTrQsRqXnfayRnebQhfFw%2BujdE5yZZpxfQ4ue9sAySNsJebIdG%2FgWOv%2FoH1EjSbZ%2Btq%2FEWDyO08GtNs4BBqkW2sDPU1Lq%2B52ykKTw9avZWTGoq3SomL80isbYcG7qaJz5PQ6B4d3DYEdp99s7ZDva%2Fq4NnuXBkAgRZpVrgiivLgbDlR7ExEoNbFD7GZVpgiZ4kF1xop%2BVzlZFujdJCdFJBmC129vbkwK2oai4CMkstgkspePqokBF6Ef7wMK%2Fpg%2Frc1t3mxyjf%2B24PmEzFuBP77kUAAAA%3D",
+								"type": "text"
+							},
+							{
+								"key": "Cookie",
+								"value": "77u%2FPD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48U1A%2BVjYsMGguZnxtZW1iZXJzaGlwfDEwMDMzZmZmOTllNWZiMjhAbGl2ZS5jb20sMCMuZnxtZW1iZXJzaGlwfGxha3NobWkubmFyYXlhbmFuQHBsYXRmb3JtM3NvbHV0aW9ucy5jb20sMTMyMTIzMTQwODgwMDAwMDAwLDEzMjEyMjQxODYxMDAwMDAwMCwxMzIxMjQwMDU3NzAwNTE0MTIsMC4wLjAuMCwyLDk1MGFmNDExLWE4NjktNGZkYi1iZTg1LTkyNmRiYWJlM2M0ZiwsLDE3Y2MwMTlmLTAwZDUtOTAwMC03ZWEyLTBhYzc0YmQ4ZDI4NSwxN2NjMDE5Zi0wMGQ1LTkwMDAtN2VhMi0wYWM3NGJkOGQyODUsLDAsMCwwLCwsLGpYTHpnU1o2QVdmL3A2bTEzZ2VQTWErT3VVSExyL1EyalRxZVZldzRFbmp5aXVTRzhuYmdkVDZQY3Q0cVdKRWNrYXZqN09aaTNNZ295a3FNR1NTUzdpdmcycDBxRGppbS9FT0ZUckh2MTZWQXVEVmZwaW9aZ2NXVkQ2UC9TaktpalM0enpCOXQwanE5OWF2cDA5ZHhKSFdhTjczYUs1Wnl2MjJzM05pQzFqVmJhK1JUR25HejRsOC9vc3F0VWNHQnlaNTZaSHdodkVTM1ROSXFiVmp2MGNCWVNDVWVwVWxWVEZTMUtrd1JGbXQ1d01kWFhLdkZUZjZtd0dmSjFDa0tiREhnRWFpZVFqMWRiazdnUkNiZ0tKSlJpN204ZHVHcFBNREtBUXRrMVNYUllDTnN1VmZYUlYzbG5CLzFqVlRla2Q5dC91d1lxYXBQdER6TnlWemZFZz09PC9TUD4%3D",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json;odata=verbose",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/_api/Web/{{relativepath}}/ModifiedBy",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"_api",
+								"Web",
+								"{{relativepath}}",
+								"ModifiedBy"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SitePages/Properties",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"type": "text",
+								"value": "jLc%2BLrJ14hb4DOZ3Hp9U0qNv3i%2Bg9pnnisvyY9x0yZUmOTUwQUY0MTEtQTg2OS00RkRCLUJFODUtOTI2REJBQkUzQzRGB1N%2BeFcA%2B9oqcKSEWLuWGkbxiEwsCR7BkBXb2USXyIvY%2BixpbwrJvKMFlCf8vlMTrQsRqXnfayRnebQhfFw%2BujdE5yZZpxfQ4ue9sAySNsJebIdG%2FgWOv%2FoH1EjSbZ%2Btq%2FEWDyO08GtNs4BBqkW2sDPU1Lq%2B52ykKTw9avZWTGoq3SomL80isbYcG7qaJz5PQ6B4d3DYEdp99s7ZDva%2Fq4NnuXBkAgRZpVrgiivLgbDlR7ExEoNbFD7GZVpgiZ4kF1xop%2BVzlZFujdJCdFJBmC129vbkwK2oai4CMkstgkspePqokBF6Ef7wMK%2Fpg%2Frc1t3mxyjf%2B24PmEzFuBP77kUAAAA%3D"
+							},
+							{
+								"key": "Cookie",
+								"type": "text",
+								"value": "77u%2FPD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48U1A%2BVjYsMGguZnxtZW1iZXJzaGlwfDEwMDMzZmZmOTllNWZiMjhAbGl2ZS5jb20sMCMuZnxtZW1iZXJzaGlwfGxha3NobWkubmFyYXlhbmFuQHBsYXRmb3JtM3NvbHV0aW9ucy5jb20sMTMyMTIzMTQwODgwMDAwMDAwLDEzMjEyMjQxODYxMDAwMDAwMCwxMzIxMjQwMDU3NzAwNTE0MTIsMC4wLjAuMCwyLDk1MGFmNDExLWE4NjktNGZkYi1iZTg1LTkyNmRiYWJlM2M0ZiwsLDE3Y2MwMTlmLTAwZDUtOTAwMC03ZWEyLTBhYzc0YmQ4ZDI4NSwxN2NjMDE5Zi0wMGQ1LTkwMDAtN2VhMi0wYWM3NGJkOGQyODUsLDAsMCwwLCwsLGpYTHpnU1o2QVdmL3A2bTEzZ2VQTWErT3VVSExyL1EyalRxZVZldzRFbmp5aXVTRzhuYmdkVDZQY3Q0cVdKRWNrYXZqN09aaTNNZ295a3FNR1NTUzdpdmcycDBxRGppbS9FT0ZUckh2MTZWQXVEVmZwaW9aZ2NXVkQ2UC9TaktpalM0enpCOXQwanE5OWF2cDA5ZHhKSFdhTjczYUs1Wnl2MjJzM05pQzFqVmJhK1JUR25HejRsOC9vc3F0VWNHQnlaNTZaSHdodkVTM1ROSXFiVmp2MGNCWVNDVWVwVWxWVEZTMUtrd1JGbXQ1d01kWFhLdkZUZjZtd0dmSjFDa0tiREhnRWFpZVFqMWRiazdnUkNiZ0tKSlJpN204ZHVHcFBNREtBUXRrMVNYUllDTnN1VmZYUlYzbG5CLzFqVlRla2Q5dC91d1lxYXBQdER6TnlWemZFZz09PC9TUD4%3D"
+							},
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json;odata=verbose"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/_api/Web/{{relativepath}}/Properties",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"_api",
+								"Web",
+								"{{relativepath}}",
+								"Properties"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SitePages/VersionEvents",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "jLc%2BLrJ14hb4DOZ3Hp9U0qNv3i%2Bg9pnnisvyY9x0yZUmOTUwQUY0MTEtQTg2OS00RkRCLUJFODUtOTI2REJBQkUzQzRGB1N%2BeFcA%2B9oqcKSEWLuWGkbxiEwsCR7BkBXb2USXyIvY%2BixpbwrJvKMFlCf8vlMTrQsRqXnfayRnebQhfFw%2BujdE5yZZpxfQ4ue9sAySNsJebIdG%2FgWOv%2FoH1EjSbZ%2Btq%2FEWDyO08GtNs4BBqkW2sDPU1Lq%2B52ykKTw9avZWTGoq3SomL80isbYcG7qaJz5PQ6B4d3DYEdp99s7ZDva%2Fq4NnuXBkAgRZpVrgiivLgbDlR7ExEoNbFD7GZVpgiZ4kF1xop%2BVzlZFujdJCdFJBmC129vbkwK2oai4CMkstgkspePqokBF6Ef7wMK%2Fpg%2Frc1t3mxyjf%2B24PmEzFuBP77kUAAAA%3D",
+								"type": "text"
+							},
+							{
+								"key": "Cookie",
+								"value": "77u%2FPD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48U1A%2BVjYsMGguZnxtZW1iZXJzaGlwfDEwMDMzZmZmOTllNWZiMjhAbGl2ZS5jb20sMCMuZnxtZW1iZXJzaGlwfGxha3NobWkubmFyYXlhbmFuQHBsYXRmb3JtM3NvbHV0aW9ucy5jb20sMTMyMTIzMTQwODgwMDAwMDAwLDEzMjEyMjQxODYxMDAwMDAwMCwxMzIxMjQwMDU3NzAwNTE0MTIsMC4wLjAuMCwyLDk1MGFmNDExLWE4NjktNGZkYi1iZTg1LTkyNmRiYWJlM2M0ZiwsLDE3Y2MwMTlmLTAwZDUtOTAwMC03ZWEyLTBhYzc0YmQ4ZDI4NSwxN2NjMDE5Zi0wMGQ1LTkwMDAtN2VhMi0wYWM3NGJkOGQyODUsLDAsMCwwLCwsLGpYTHpnU1o2QVdmL3A2bTEzZ2VQTWErT3VVSExyL1EyalRxZVZldzRFbmp5aXVTRzhuYmdkVDZQY3Q0cVdKRWNrYXZqN09aaTNNZ295a3FNR1NTUzdpdmcycDBxRGppbS9FT0ZUckh2MTZWQXVEVmZwaW9aZ2NXVkQ2UC9TaktpalM0enpCOXQwanE5OWF2cDA5ZHhKSFdhTjczYUs1Wnl2MjJzM05pQzFqVmJhK1JUR25HejRsOC9vc3F0VWNHQnlaNTZaSHdodkVTM1ROSXFiVmp2MGNCWVNDVWVwVWxWVEZTMUtrd1JGbXQ1d01kWFhLdkZUZjZtd0dmSjFDa0tiREhnRWFpZVFqMWRiazdnUkNiZ0tKSlJpN204ZHVHcFBNREtBUXRrMVNYUllDTnN1VmZYUlYzbG5CLzFqVlRla2Q5dC91d1lxYXBQdER6TnlWemZFZz09PC9TUD4%3D",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json;odata=verbose",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/_api/Web/{{relativepath}}/VersionEvents",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"_api",
+								"Web",
+								"{{relativepath}}",
+								"VersionEvents"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SitePages/Versions",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"type": "text",
+								"value": "jLc%2BLrJ14hb4DOZ3Hp9U0qNv3i%2Bg9pnnisvyY9x0yZUmOTUwQUY0MTEtQTg2OS00RkRCLUJFODUtOTI2REJBQkUzQzRGB1N%2BeFcA%2B9oqcKSEWLuWGkbxiEwsCR7BkBXb2USXyIvY%2BixpbwrJvKMFlCf8vlMTrQsRqXnfayRnebQhfFw%2BujdE5yZZpxfQ4ue9sAySNsJebIdG%2FgWOv%2FoH1EjSbZ%2Btq%2FEWDyO08GtNs4BBqkW2sDPU1Lq%2B52ykKTw9avZWTGoq3SomL80isbYcG7qaJz5PQ6B4d3DYEdp99s7ZDva%2Fq4NnuXBkAgRZpVrgiivLgbDlR7ExEoNbFD7GZVpgiZ4kF1xop%2BVzlZFujdJCdFJBmC129vbkwK2oai4CMkstgkspePqokBF6Ef7wMK%2Fpg%2Frc1t3mxyjf%2B24PmEzFuBP77kUAAAA%3D"
+							},
+							{
+								"key": "Cookie",
+								"type": "text",
+								"value": "77u%2FPD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48U1A%2BVjYsMGguZnxtZW1iZXJzaGlwfDEwMDMzZmZmOTllNWZiMjhAbGl2ZS5jb20sMCMuZnxtZW1iZXJzaGlwfGxha3NobWkubmFyYXlhbmFuQHBsYXRmb3JtM3NvbHV0aW9ucy5jb20sMTMyMTIzMTQwODgwMDAwMDAwLDEzMjEyMjQxODYxMDAwMDAwMCwxMzIxMjQwMDU3NzAwNTE0MTIsMC4wLjAuMCwyLDk1MGFmNDExLWE4NjktNGZkYi1iZTg1LTkyNmRiYWJlM2M0ZiwsLDE3Y2MwMTlmLTAwZDUtOTAwMC03ZWEyLTBhYzc0YmQ4ZDI4NSwxN2NjMDE5Zi0wMGQ1LTkwMDAtN2VhMi0wYWM3NGJkOGQyODUsLDAsMCwwLCwsLGpYTHpnU1o2QVdmL3A2bTEzZ2VQTWErT3VVSExyL1EyalRxZVZldzRFbmp5aXVTRzhuYmdkVDZQY3Q0cVdKRWNrYXZqN09aaTNNZ295a3FNR1NTUzdpdmcycDBxRGppbS9FT0ZUckh2MTZWQXVEVmZwaW9aZ2NXVkQ2UC9TaktpalM0enpCOXQwanE5OWF2cDA5ZHhKSFdhTjczYUs1Wnl2MjJzM05pQzFqVmJhK1JUR25HejRsOC9vc3F0VWNHQnlaNTZaSHdodkVTM1ROSXFiVmp2MGNCWVNDVWVwVWxWVEZTMUtrd1JGbXQ1d01kWFhLdkZUZjZtd0dmSjFDa0tiREhnRWFpZVFqMWRiazdnUkNiZ0tKSlJpN204ZHVHcFBNREtBUXRrMVNYUllDTnN1VmZYUlYzbG5CLzFqVlRla2Q5dC91d1lxYXBQdER6TnlWemZFZz09PC9TUD4%3D"
+							},
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json;odata=verbose"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/_api/Web/{{relativepath}}/Versions",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"_api",
+								"Web",
+								"{{relativepath}}",
+								"Versions"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Authentication",
+			"item": [
+				{
+					"name": "Generate Security Token",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "text/plain",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<s:Envelope xmlns:a=\"http://www.w3.org/2005/08/addressing\" xmlns:s=\"http://www.w3.org/2003/05/soap-envelope\" xmlns:u=\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd\">\n\t<s:Header>\n\t\t<a:Action s:mustUnderstand=\"1\">http://schemas.xmlsoap.org/ws/2005/02/trust/RST/Issue</a:Action>\n\t\t<a:ReplyTo>\n\t\t\t<a:Address>http://www.w3.org/2005/08/addressing/anonymous</a:Address>\n\t\t</a:ReplyTo>\n\t\t<a:To s:mustUnderstand=\"1\">https://login.microsoftonline.com/extSTS.srf</a:To>\n\t\t<o:Security s:mustUnderstand=\"1\" xmlns:o=\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd\">\n\t\t\t<o:UsernameToken>\n\t\t\t\t<o:Username>raviteja.m@platform3solutions.com</o:Username>\n\t\t\t\t<o:Password>gxmldzgtchsjbbxq</o:Password>\n\t\t\t</o:UsernameToken>\n\t\t</o:Security>\n\t</s:Header>\n\t<s:Body>\n\t\t<t:RequestSecurityToken xmlns:t=\"http://schemas.xmlsoap.org/ws/2005/02/trust\">\n\t\t\t<wsp:AppliesTo xmlns:wsp=\"http://schemas.xmlsoap.org/ws/2004/09/policy\">\n\t\t\t\t<a:EndpointReference>\n\t\t\t\t\t<a:Address>https://platform3solutionsllc.sharepoint.com/_forms/default.aspx?wa=wsignin1.0</a:Address>\n\t\t\t\t</a:EndpointReference>\n\t\t\t</wsp:AppliesTo>\n\t\t\t<t:KeyType>http://schemas.xmlsoap.org/ws/2005/05/identity/NoProofKey</t:KeyType>\n\t\t\t<t:RequestType>http://schemas.xmlsoap.org/ws/2005/02/trust/Issue</t:RequestType>\n\t\t\t<t:TokenType>urn:oasis:names:tc:SAML:1.0:assertion</t:TokenType>\n\t\t</t:RequestSecurityToken>\n\t</s:Body>\n</s:Envelope>",
+							"options": {
+								"raw": {
+									"language": "text"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://login.microsoftonline.com/extSTS.srf",
+							"protocol": "https",
+							"host": [
+								"login",
+								"microsoftonline",
+								"com"
+							],
+							"path": [
+								"extSTS.srf"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Generate Access Token",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "text/plain",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "t=EwAoA06hBwAUoI9qUOm+nWxx1GEBzUSgrucLnssAAZHucLss48Yrp1kM5bcOStvwuPc+lTzyL7N9TdwbGkfzzF9Xm21CtU54d4/U6QXVAKWWiMWvCSB3Z2Z+gIQ3xNTDAagPqTZ1g7mFmTYWdp2IUlkEVQ40H07luH6eD/7/cJevFCPtyzcmqkVvqm2oh44pl+9TH5lx9+FKhzkQOkuB5JZL29Knnc5d74QJv9JtJ0Tu9y9pudxIgUipR3T4ZT7pVv+AJPBhEqXmxigYi1gDioahyULg/INxv+j2OMk7MlT+6+ytbr2lm7YnThidMy96LJ2DeVAZie/FZDiutY+D2G6pBLnsFvtmb0Nb451sSr/BZVlHH2B4m9s2oMbc1HQDZgAACLo+oqv6Bhq7+AGm8HZss5x4OJ7y7KCvEVncjqp2uS8JHyXLfGDZnVuWIyCBR0W0b1BQT6mQfBLgSyzbeX7RMe54RlYLSVtCSpaeUzwkfAZ4BS8I2c7cgF8s+4aSIzoaZZpQVGEF6KiU/mkMjx/nQSrjrJUHI6uIrkhYJFyBFATfFbJqad7pDLbo+aGeDdgtDLcvOYNGRMbEdxz8BDVlvmBHFBZz8pMrfGH5zOKJ1q/t3m9Dluf1BTOO6wdrR4FcdLHuHxSs8W7gsYYihe6i0jbUPVDsGsISwZJP7ocU+JuqQ6tRWxoCRbwU0U0qwnVLF/nKSWK3xSU3+IXKq7id0P9lj5KzwE3lC8lepT/YYUGL3BXc3xr1fmkSGN8QSo1lT3CBO0hH77dtvJNnusCr/LU1n8NPVNNotPZ35gQR+dtC2sjagN/5tWseYmTDXW0YfuNpZ8Wry3sdGRsCtFU9TKxG2cXCRe3YxE664UemlWkp43McT2pYdPVIDir6x/Aq+sT42culZkt3mxHnwAVwX1ha0f21ph9+8eZYz/H5zfzC26l2qgr24HZ7WtnkDFYicoB2R97VFiSKtRsGtTNGI7Ng9OVDp72Yk9vipMRxLQ/C1orfjnYVunKRnUL8JzO2CFGgN3zAEMIXirsyacg8jQUC2+6uAfMTKasS0CfL+VJphwNdAg==&p=",
+							"options": {
+								"raw": {
+									"language": "text"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/_forms/default.aspx?wa=wsignin1.0",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"_forms",
+								"default.aspx"
+							],
+							"query": [
+								{
+									"key": "wa",
+									"value": "wsignin1.0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetRequestDigest",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Cookie",
+								"type": "text",
+								"value": "kbJnUJUt5%2BJuSlEcI6YVVM3LIu0co8gYBujEN5LlXc0mOTUwQUY0MTEtQTg2OS00RkRCLUJFODUtOTI2REJBQkUzQzRGYInZFA2YCV%2FC0XdZFPcuCl%2FhiAOqsJb4RSy7B1GhLDkiQ1AZp97KfNTIu4b7ocicPFv5aFMvItvHUs7BFc3xmHj4zJwII7iUE0Dn9ekx2jZ0SDhcNHjTbhhjFQyNsC%2BXE1oNIlDA6i9U8wJWDpA6C3g8SFr%2BQ3fU1IP2oQOLgExkTN8ACTmEhXO1hVCuKxyHTtXmG44TZwcb%2F1sSHQuBrWh6pUupvOAWTtdEjcBfyh9sDghVtQMB6ImRyBqlMNeo8G1iJ5qjcSz%2Fsz42hUAQBf2tkcKrF9Hgqu4hpUyS%2FhYXXW0BUYzG3hOQBHEteNgaLCmMLTAjkmepMUBAMYMDGkUAAAA%3D"
+							},
+							{
+								"key": "Cookie",
+								"type": "text",
+								"value": "77u%2FPD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48U1A%2BVjYsMGguZnxtZW1iZXJzaGlwfDEwMDNiZmZkOTZiNWY5N2ZAbGl2ZS5jb20sMCMuZnxtZW1iZXJzaGlwfHJhamVzaC5qZXlhcmFtYW5AcGxhdGZvcm0zc29sdXRpb25zLmNvbSwxMzIxMzgwNTc4NjAwMDAwMDAsMTMyMTM3OTkwNTQwMDAwMDAwLDEzMjEzODkyMjk3NjA1MDY2OCwwLjAuMC4wLDIsOTUwYWY0MTEtYTg2OS00ZmRiLWJlODUtOTI2ZGJhYmUzYzRmLCwsYjU1YTA3OWYtNDA3MC05MDAwLTdlNTctZDc2OGE1NDAyYzUwLGI1NWEwNzlmLTQwNzAtOTAwMC03ZTU3LWQ3NjhhNTQwMmM1MCwsMCwwLDAsLCwsVCt1V0V1YlY0UGlZV0ZJSERXUFVVN2VQTXdkRGxFWkJ5azlaZmZIdzZiYnltcS92c3QzU3lCMi9vcHhnVC9SOEtyN1AvWm5JdXpUY1ZNbmFCVmJmQU1uMHdvN1R5OU8yUHU0NmJkNTdYN094dFRNM1l4cEEwTm1BbzdkK0FEVFd0bFhxTmVyR3RqWjJMUTIzTkpKS1JFdTZBbmdQSm9qNE4yVnc3SStoS0RYcHBvd0l2dW02TWNBRHRVeXp2eGQvQStiTUQ2SGVLMDg0ZjFwSXNnc21EWFFxNEo5c2oyRHhhY1RMSUd3dHc1V3BTdGlXVmlCVFVnOWRQSHhvRVdWdWtNTCszUHZaZmNUT2xmYUZpcUVSYVZadWFPR3BVQXFUcXBMMUJzOUw5QXVlT3h2dGlFRHJvUkRMS1pxeHRBK3lmeUcxVFV1SFZZWWZFT1F4UUFqRGNnPT08L1NQPg%3D%3D"
+							},
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json;odata=verbose"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json;odata=verbose"
+							}
+						],
+						"url": {
+							"raw": "https://platform3solutionsllc.sharepoint.com/_api/contextinfo",
+							"protocol": "https",
+							"host": [
+								"platform3solutionsllc",
+								"sharepoint",
+								"com"
+							],
+							"path": [
+								"_api",
+								"contextinfo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Test Authentication working",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "kbJnUJUt5%2BJuSlEcI6YVVM3LIu0co8gYBujEN5LlXc0mOTUwQUY0MTEtQTg2OS00RkRCLUJFODUtOTI2REJBQkUzQzRGYInZFA2YCV%2FC0XdZFPcuCl%2FhiAOqsJb4RSy7B1GhLDkiQ1AZp97KfNTIu4b7ocicPFv5aFMvItvHUs7BFc3xmHj4zJwII7iUE0Dn9ekx2jZ0SDhcNHjTbhhjFQyNsC%2BXE1oNIlDA6i9U8wJWDpA6C3g8SFr%2BQ3fU1IP2oQOLgExkTN8ACTmEhXO1hVCuKxyHTtXmG44TZwcb%2F1sSHQuBrWh6pUupvOAWTtdEjcBfyh9sDghVtQMB6ImRyBqlMNeo8G1iJ5qjcSz%2Fsz42hUAQBf2tkcKrF9Hgqu4hpUyS%2FhYXXW0BUYzG3hOQBHEteNgaLCmMLTAjkmepMUBAMYMDGkUAAAA%3D",
+								"type": "text"
+							},
+							{
+								"key": "Cookie",
+								"value": "77u%2FPD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48U1A%2BVjYsMGguZnxtZW1iZXJzaGlwfDEwMDNiZmZkOTZiNWY5N2ZAbGl2ZS5jb20sMCMuZnxtZW1iZXJzaGlwfHJhamVzaC5qZXlhcmFtYW5AcGxhdGZvcm0zc29sdXRpb25zLmNvbSwxMzIxMzgwNTc4NjAwMDAwMDAsMTMyMTM3OTkwNTQwMDAwMDAwLDEzMjEzODkyMjk3NjA1MDY2OCwwLjAuMC4wLDIsOTUwYWY0MTEtYTg2OS00ZmRiLWJlODUtOTI2ZGJhYmUzYzRmLCwsYjU1YTA3OWYtNDA3MC05MDAwLTdlNTctZDc2OGE1NDAyYzUwLGI1NWEwNzlmLTQwNzAtOTAwMC03ZTU3LWQ3NjhhNTQwMmM1MCwsMCwwLDAsLCwsVCt1V0V1YlY0UGlZV0ZJSERXUFVVN2VQTXdkRGxFWkJ5azlaZmZIdzZiYnltcS92c3QzU3lCMi9vcHhnVC9SOEtyN1AvWm5JdXpUY1ZNbmFCVmJmQU1uMHdvN1R5OU8yUHU0NmJkNTdYN094dFRNM1l4cEEwTm1BbzdkK0FEVFd0bFhxTmVyR3RqWjJMUTIzTkpKS1JFdTZBbmdQSm9qNE4yVnc3SStoS0RYcHBvd0l2dW02TWNBRHRVeXp2eGQvQStiTUQ2SGVLMDg0ZjFwSXNnc21EWFFxNEo5c2oyRHhhY1RMSUd3dHc1V3BTdGlXVmlCVFVnOWRQSHhvRVdWdWtNTCszUHZaZmNUT2xmYUZpcUVSYVZadWFPR3BVQXFUcXBMMUJzOUw5QXVlT3h2dGlFRHJvUkRMS1pxeHRBK3lmeUcxVFV1SFZZWWZFT1F4UUFqRGNnPT08L1NQPg%3D%3D",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json;odata=verbose",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json;odata=verbose",
+								"type": "text"
+							},
+							{
+								"key": "X-RequestDigest",
+								"value": "0x6D14C7062CD6C6AC2021262E4867D16C22C8A569D356AC30643EB2E6B745C74207B83EC98038433BA6A23FE5A25FB5903F8D0711F466CF00B3581FCD8563A489,26 Sep 2019 05:12:48 -0000",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://platform3solutionsllc.sharepoint.com/sites/SharePointSubSiteExtractionTesting/_api/Web/GetFileByServerRelativePath(decodedurl='/sites/SharePointSubSiteExtractionTesting/Shared%20Documents/Forms/AllItems.aspx')/ModifiedBy",
+							"protocol": "https",
+							"host": [
+								"platform3solutionsllc",
+								"sharepoint",
+								"com"
+							],
+							"path": [
+								"sites",
+								"SharePointSubSiteExtractionTesting",
+								"_api",
+								"Web",
+								"GetFileByServerRelativePath(decodedurl='",
+								"sites",
+								"SharePointSubSiteExtractionTesting",
+								"Shared%20Documents",
+								"Forms",
+								"AllItems.aspx')",
+								"ModifiedBy"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Retrieve Parent Sites",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"type": "text",
+								"value": "kbJnUJUt5%2BJuSlEcI6YVVM3LIu0co8gYBujEN5LlXc0mOTUwQUY0MTEtQTg2OS00RkRCLUJFODUtOTI2REJBQkUzQzRGYInZFA2YCV%2FC0XdZFPcuCl%2FhiAOqsJb4RSy7B1GhLDkiQ1AZp97KfNTIu4b7ocicPFv5aFMvItvHUs7BFc3xmHj4zJwII7iUE0Dn9ekx2jZ0SDhcNHjTbhhjFQyNsC%2BXE1oNIlDA6i9U8wJWDpA6C3g8SFr%2BQ3fU1IP2oQOLgExkTN8ACTmEhXO1hVCuKxyHTtXmG44TZwcb%2F1sSHQuBrWh6pUupvOAWTtdEjcBfyh9sDghVtQMB6ImRyBqlMNeo8G1iJ5qjcSz%2Fsz42hUAQBf2tkcKrF9Hgqu4hpUyS%2FhYXXW0BUYzG3hOQBHEteNgaLCmMLTAjkmepMUBAMYMDGkUAAAA%3D"
+							},
+							{
+								"key": "Cookie",
+								"type": "text",
+								"value": "77u%2FPD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48U1A%2BVjYsMGguZnxtZW1iZXJzaGlwfDEwMDNiZmZkOTZiNWY5N2ZAbGl2ZS5jb20sMCMuZnxtZW1iZXJzaGlwfHJhamVzaC5qZXlhcmFtYW5AcGxhdGZvcm0zc29sdXRpb25zLmNvbSwxMzIxMzgwNTc4NjAwMDAwMDAsMTMyMTM3OTkwNTQwMDAwMDAwLDEzMjEzODkyMjk3NjA1MDY2OCwwLjAuMC4wLDIsOTUwYWY0MTEtYTg2OS00ZmRiLWJlODUtOTI2ZGJhYmUzYzRmLCwsYjU1YTA3OWYtNDA3MC05MDAwLTdlNTctZDc2OGE1NDAyYzUwLGI1NWEwNzlmLTQwNzAtOTAwMC03ZTU3LWQ3NjhhNTQwMmM1MCwsMCwwLDAsLCwsVCt1V0V1YlY0UGlZV0ZJSERXUFVVN2VQTXdkRGxFWkJ5azlaZmZIdzZiYnltcS92c3QzU3lCMi9vcHhnVC9SOEtyN1AvWm5JdXpUY1ZNbmFCVmJmQU1uMHdvN1R5OU8yUHU0NmJkNTdYN094dFRNM1l4cEEwTm1BbzdkK0FEVFd0bFhxTmVyR3RqWjJMUTIzTkpKS1JFdTZBbmdQSm9qNE4yVnc3SStoS0RYcHBvd0l2dW02TWNBRHRVeXp2eGQvQStiTUQ2SGVLMDg0ZjFwSXNnc21EWFFxNEo5c2oyRHhhY1RMSUd3dHc1V3BTdGlXVmlCVFVnOWRQSHhvRVdWdWtNTCszUHZaZmNUT2xmYUZpcUVSYVZadWFPR3BVQXFUcXBMMUJzOUw5QXVlT3h2dGlFRHJvUkRMS1pxeHRBK3lmeUcxVFV1SFZZWWZFT1F4UUFqRGNnPT08L1NQPg%3D%3D"
+							},
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json;odata=verbose"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json;odata=verbose"
+							},
+							{
+								"key": "X-RequestDigest",
+								"type": "text",
+								"value": "0x6D14C7062CD6C6AC2021262E4867D16C22C8A569D356AC30643EB2E6B745C74207B83EC98038433BA6A23FE5A25FB5903F8D0711F466CF00B3581FCD8563A489,26 Sep 2019 05:12:48 -0000"
+							}
+						],
+						"url": {
+							"raw": "https://platform3solutionsllc.sharepoint.com/_api/search/query?querytext=%27contentclass:STS_Site%27&selectproperties=%27Title,Path%27&rowlimit=5000&Content-Type=application/json;odata=verbose&Accept=application/json;odata=verbose",
+							"protocol": "https",
+							"host": [
+								"platform3solutionsllc",
+								"sharepoint",
+								"com"
+							],
+							"path": [
+								"_api",
+								"search",
+								"query"
+							],
+							"query": [
+								{
+									"key": "querytext",
+									"value": "%27contentclass:STS_Site%27"
+								},
+								{
+									"key": "selectproperties",
+									"value": "%27Title,Path%27"
+								},
+								{
+									"key": "rowlimit",
+									"value": "5000"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;odata=verbose"
+								},
+								{
+									"key": "Accept",
+									"value": "application/json;odata=verbose"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Others",
+			"item": [
+				{
+					"name": "get top level sites",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"type": "text",
+								"value": "{{rtFa}}"
+							},
+							{
+								"key": "Cookie",
+								"type": "text",
+								"value": "{{FedAuth}}"
+							},
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json;odata=verbose"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json;odata=verbose"
+							}
+						],
+						"url": {
+							"raw": "https://platform3solutionsllc-admin.sharepoint.com/_api/web/lists/GetByTitle('DO_NOT_DELETE_SPLIST_TENANTADMIN_AGGREGATED_SITECOLLECTIONS')/items",
+							"protocol": "https",
+							"host": [
+								"platform3solutionsllc-admin",
+								"sharepoint",
+								"com"
+							],
+							"path": [
+								"_api",
+								"web",
+								"lists",
+								"GetByTitle('DO_NOT_DELETE_SPLIST_TENANTADMIN_AGGREGATED_SITECOLLECTIONS')",
+								"items"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "_api/site/",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"type": "text",
+								"value": "{{rtFa}}"
+							},
+							{
+								"key": "Cookie",
+								"type": "text",
+								"value": "{{FedAuth}}"
+							},
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json;odata=verbose"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json;odata=verbose"
+							}
+						],
+						"url": {
+							"raw": "https://platform3solutionsllc.sharepoint.com/sites/SharePointSubSiteExtractionTesting/_api/web/GetSubwebs(nWebTemplateFilter=-1)",
+							"protocol": "https",
+							"host": [
+								"platform3solutionsllc",
+								"sharepoint",
+								"com"
+							],
+							"path": [
+								"sites",
+								"SharePointSubSiteExtractionTesting",
+								"_api",
+								"web",
+								"GetSubwebs(nWebTemplateFilter=-1)"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetRoot",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json;odata=verbose",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json;odata=verbose",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/_api/Web/Lists",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"_api",
+								"Web",
+								"Lists"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Request Digest",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							},
+							{
+								"key": "Cookie",
+								"value": "{{rtFa}}",
+								"type": "text"
+							},
+							{
+								"key": "Cookie",
+								"value": "{{FedAuth}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://platform3solutionsllc.sharepoint.com/_api/lists",
+							"protocol": "https",
+							"host": [
+								"platform3solutionsllc",
+								"sharepoint",
+								"com"
+							],
+							"path": [
+								"_api",
+								"lists"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Request Digest Copy",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							},
+							{
+								"key": "Cookie",
+								"value": "{{rtFa}}",
+								"type": "text"
+							},
+							{
+								"key": "Cookie",
+								"value": "{{FedAuth}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://platform3solutionsllc.sharepoint.com/_api/lists",
+							"protocol": "https",
+							"host": [
+								"platform3solutionsllc",
+								"sharepoint",
+								"com"
+							],
+							"path": [
+								"_api",
+								"lists"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List of links in sub sites",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "{{rtFa}}",
+								"type": "text"
+							},
+							{
+								"key": "Cookie",
+								"value": "{{FedAuth}}",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json;odata=verbose",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://platform3solutionsllc.sharepoint.com/sites/InfoArchive164-Documentation2/_api/Web/GetFolderByServerRelativePath(decodedurl='/sites/InfoArchive164-Documentation2/')/Folders",
+							"protocol": "https",
+							"host": [
+								"platform3solutionsllc",
+								"sharepoint",
+								"com"
+							],
+							"path": [
+								"sites",
+								"InfoArchive164-Documentation2",
+								"_api",
+								"Web",
+								"GetFolderByServerRelativePath(decodedurl='",
+								"sites",
+								"InfoArchive164-Documentation2",
+								"')",
+								"Folders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get main web",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "{{rtFa}}",
+								"type": "text"
+							},
+							{
+								"key": "Cookie",
+								"value": "{{FedAuth}}",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json;odata=verbose",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://platform3solutionsllc.sharepoint.com/_api/Web/",
+							"protocol": "https",
+							"host": [
+								"platform3solutionsllc",
+								"sharepoint",
+								"com"
+							],
+							"path": [
+								"_api",
+								"Web",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get Parent Site",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"type": "text",
+								"value": "{{rtFa}}"
+							},
+							{
+								"key": "Cookie",
+								"type": "text",
+								"value": "{{FedAuth}}"
+							},
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json;odata=verbose"
+							}
+						],
+						"url": {
+							"raw": "https://platform3solutionsllc.sharepoint.com/_api/search/query?querytext=%27contentclass:STS_Site%27",
+							"protocol": "https",
+							"host": [
+								"platform3solutionsllc",
+								"sharepoint",
+								"com"
+							],
+							"path": [
+								"_api",
+								"search",
+								"query"
+							],
+							"query": [
+								{
+									"key": "querytext",
+									"value": "%27contentclass:STS_Site%27"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List of links in sub sites1",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "{{rtFa}}",
+								"type": "text"
+							},
+							{
+								"key": "Cookie",
+								"value": "{{FedAuth}}",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json;odata=verbose",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://platform3solutionsllc.sharepoint.com/sites/InfoArchive164-Documentation2/_api/Web/GetFolderByServerRelativePath(decodedurl='')/Files",
+							"protocol": "https",
+							"host": [
+								"platform3solutionsllc",
+								"sharepoint",
+								"com"
+							],
+							"path": [
+								"sites",
+								"InfoArchive164-Documentation2",
+								"_api",
+								"Web",
+								"GetFolderByServerRelativePath(decodedurl='')",
+								"Files"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "P&G",
+			"item": [
+				{
+					"name": "Authentication",
+					"item": [
+						{
+							"name": "Generate Security Token",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "text/plain",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<s:Envelope xmlns:a=\"http://www.w3.org/2005/08/addressing\" xmlns:s=\"http://www.w3.org/2003/05/soap-envelope\" xmlns:u=\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd\">\n\t<s:Header>\n\t\t<a:Action s:mustUnderstand=\"1\">http://schemas.xmlsoap.org/ws/2005/02/trust/RST/Issue</a:Action>\n\t\t<a:ReplyTo>\n\t\t\t<a:Address>http://www.w3.org/2005/08/addressing/anonymous</a:Address>\n\t\t</a:ReplyTo>\n\t\t<a:To s:mustUnderstand=\"1\">https://login.microsoftonline.com/extSTS.srf</a:To>\n\t\t<o:Security s:mustUnderstand=\"1\" xmlns:o=\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd\">\n\t\t\t<o:UsernameToken>\n\t\t\t\t<o:Username>raviteja.m@platform3solutions.com</o:Username>\n\t\t\t\t<o:Password>gxmldzgtchsjbbxq</o:Password>\n\t\t\t</o:UsernameToken>\n\t\t</o:Security>\n\t</s:Header>\n\t<s:Body>\n\t\t<t:RequestSecurityToken xmlns:t=\"http://schemas.xmlsoap.org/ws/2005/02/trust\">\n\t\t\t<wsp:AppliesTo xmlns:wsp=\"http://schemas.xmlsoap.org/ws/2004/09/policy\">\n\t\t\t\t<a:EndpointReference>\n\t\t\t\t\t<a:Address>https://pgone.sharepoint.com</a:Address>\n\t\t\t\t</a:EndpointReference>\n\t\t\t</wsp:AppliesTo>\n\t\t\t<t:KeyType>http://schemas.xmlsoap.org/ws/2005/05/identity/NoProofKey</t:KeyType>\n\t\t\t<t:RequestType>http://schemas.xmlsoap.org/ws/2005/02/trust/Issue</t:RequestType>\n\t\t\t<t:TokenType>urn:oasis:names:tc:SAML:1.0:assertion</t:TokenType>\n\t\t</t:RequestSecurityToken>\n\t</s:Body>\n</s:Envelope>",
+									"options": {
+										"raw": {
+											"language": "text"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://login.microsoftonline.com/extSTS.srf",
+									"protocol": "https",
+									"host": [
+										"login",
+										"microsoftonline",
+										"com"
+									],
+									"path": [
+										"extSTS.srf"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Generate Access Token",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "text/plain",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "t=EwAoA06hBwAUoI9qUOm+nWxx1GEBzUSgrucLnssAAUOSS80RoSAX9409mpUgatD46K7R4GojDbdQxkPBWJfnozomLWUXw1mg6+6cs9DkGEnprA3FR4ID60fgs4M2yqKQ2r2+UiRhwgUPfxRu4VHdW73fyuCTWUXNwc/UUHsow6k+WHEUby8wiNrfh9ci2S7xUiqqG6pmGSUYP8jlh+bx8UcK1KSb0nGSLNCRorLOwgSQJF0PYIyM5IHGuu9z5HYX6IdcK6YzhgAyXPdIetHT5aol/vryG8oka0FTAD2zE4HRkEE7MUzoUoq099EMQlJ6YsDoHYd21fibSZhCUF1f0tGpKh8qo6o9vZj9Zu02+0L5c1NbZFQNabZe7VyjWDADZgAACPhnVnbwKcDm+AF/haKhLY96F/aK+nCaWmo8p1h7ESsFddvH4nbsa+3VcJBKkGAaSgJEgXKwZXSAqpF11KAuB2fyGhMf/eF4o04xMsK/OTZQM28xyZ6P2BNp6mVT5uHHwdsTbKfuI01DY3jFYdarip4g28XibFvewPVw23RcPN2WLt9ifvHUiv0dljMmXaa1yfSZuaXvOHuNTpQifO8wE1Pilygv5w6F08JyDa4w1fLbprt73Leo9qLDKw3wMT0wWw1xTtkobWJfgNgKqD0GJncHsMpjEiOKUkjSnJ19OFJ9YoIxmfM5eYw9OnM7IzQln8MCNEwGitqruNlWx9iyk8rLWQh6RSncG4d5FBob5N0y6CeEzpaVlV4EGGK5vDqMQTq0HIF7+Qx9NXVny1P84PArPTEN4s0MVmLnfu3HLPijDbVSyd3gjKPT4UtRJ5/lZtqmZvx+OjitsNmR5wndtKle7KdCf5oOEdw6ql6HbOLBqFu8yJz81b9d4JfEJd24csZogBK1QlVn5/bBGc5YLH51m2ZfVNkVq5YROtJ3hUPCr1gBTmOZCS2YbTJVgzjv28ALRJBJaQuswlNBH3N2K6CRA6NsIQyMAFFJwVnDU5hDUXQOC49wG1fva0XliJmoUbFWf3Pzy3vMBZwQIq6Sps/R8HWkM3DtiD6rM49KM9TG8AFfAg==&p=",
+									"options": {
+										"raw": {
+											"language": "text"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://pgone.sharepoint.com/_forms/default.aspx?wa=wsignin1.0",
+									"protocol": "https",
+									"host": [
+										"pgone",
+										"sharepoint",
+										"com"
+									],
+									"path": [
+										"_forms",
+										"default.aspx"
+									],
+									"query": [
+										{
+											"key": "wa",
+											"value": "wsignin1.0"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Test Authentication working",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "accept",
+										"value": "application/json;odata=verbose",
+										"type": "text"
+									},
+									{
+										"key": "cookie",
+										"value": "rtFa=MluA6t1ny3%2F9pQB%2FHZNKex9XKAOkt2TBAG%2Fz2ODDkFomOTUwQUY0MTEtQTg2OS00RkRCLUJFODUtOTI2REJBQkUzQzRGokCMkXW1cchskUT04PIDGocGAQA5%2FitMyqKXyItWMKQkQt2lKRyQEcTHQyVPI%2BZFHv3kP0de9GwhDGPGOFQHyNl48tZOPaPw6oTicjXQCzukHGJ%2F%2FxdDzrMe0NmOZ%2FodPqTgcMzBaOEVfwt%2FPjaiVSe46t%2Byoy5nNwlC%2FVE0PK5t5A5of8F74s98NOM9FafiAwlISwI%2FEI9xSAEXXxA00dH3RqvEcy20ZUQ5Nrxc7A2NB7zkN5xZARXT6%2FxALr6NvfeUXM6hDGs45g6idizV69YTgyJ7VLZmnsIAtvpaCUOzXi8E9HUnDpfgY376M2ucrDsGMTd8IO9qepc0GVRwKEUAAAA%3D; FedAuth=77u%2FPD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48U1A%2BVjYsMGguZnxtZW1iZXJzaGlwfDEwMDM3ZmZlYTRlYWU5ZWJAbGl2ZS5jb20sMCMuZnxtZW1iZXJzaGlwfHJhdml0ZWphLm1AcGxhdGZvcm0zc29sdXRpb25zLmNvbSwxMzIxNDMxMjU3ODAwMDAwMDAsMTMxNTA2OTU2NDkwMDAwMDAwLDEzMjE0Mzk5MDA0NzUxODMyNSwwLjAuMC4wLDIsOTUwYWY0MTEtYTg2OS00ZmRiLWJlODUtOTI2ZGJhYmUzYzRmLCwsZjEzZDA5OWYtMTA0MC05MDAwLTgwODAtYzc0ZGFkYWQxOTYzLGYxM2QwOTlmLTEwNDAtOTAwMC04MDgwLWM3NGRhZGFkMTk2MywsMCwwLDAsLCwsUnNRQm5ZVFRHaTcyaDFnSHpnMElVTlgrTEl6YlhwUS85cmhndzhPcU04ajBiZmJJVTF0RnlBWVNYdmlMNHl4QU9YNEJZbGZtKzA1RzFKR1hTSVJ4dmxLcjFnaThEdkF1ZE04aVMyU0tJOWtMMlNUQ2MwMnNmd3dXYk1uall1ZndlM050Y09NcHZ1VHBRTzVEdzBzUSttTUcxWDcwZU54Y2srV2RCSHZmMlBiMHI0S3hZT0prSE12cjNxcU5YL3hZL0E3aXg1MkZ4Y2tXOWp6b0oxUEZaNE9qQUo3L1BBR0xsWDJmZzllaHNSVHBzZE1XREhsWDNjWFhoT2ltZ2QvMTM5d2RsVExVTDlPSUQ2bGpKTmlGc2NWeGZ4b0dOVC9GcmlXUUVWZmQzK1krR1dqWUNDWldyNXArN1RQQjA3aTgvVmlYT0gvZlhubjh3OWlQaHlFNTR3PT08L1NQPg%3D%3D;",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://pgone.sharepoint.com/sites/ILM_Team_Collab/_api/Web/GetFolderByServerRelativePath(decodedurl='/sites/ILM_Team_Collab/Shared%20Documents')/Folders",
+									"protocol": "https",
+									"host": [
+										"pgone",
+										"sharepoint",
+										"com"
+									],
+									"path": [
+										"sites",
+										"ILM_Team_Collab",
+										"_api",
+										"Web",
+										"GetFolderByServerRelativePath(decodedurl='",
+										"sites",
+										"ILM_Team_Collab",
+										"Shared%20Documents')",
+										"Folders"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetRequestDigest",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Cookie",
+										"type": "text",
+										"value": "kbJnUJUt5%2BJuSlEcI6YVVM3LIu0co8gYBujEN5LlXc0mOTUwQUY0MTEtQTg2OS00RkRCLUJFODUtOTI2REJBQkUzQzRGYInZFA2YCV%2FC0XdZFPcuCl%2FhiAOqsJb4RSy7B1GhLDkiQ1AZp97KfNTIu4b7ocicPFv5aFMvItvHUs7BFc3xmHj4zJwII7iUE0Dn9ekx2jZ0SDhcNHjTbhhjFQyNsC%2BXE1oNIlDA6i9U8wJWDpA6C3g8SFr%2BQ3fU1IP2oQOLgExkTN8ACTmEhXO1hVCuKxyHTtXmG44TZwcb%2F1sSHQuBrWh6pUupvOAWTtdEjcBfyh9sDghVtQMB6ImRyBqlMNeo8G1iJ5qjcSz%2Fsz42hUAQBf2tkcKrF9Hgqu4hpUyS%2FhYXXW0BUYzG3hOQBHEteNgaLCmMLTAjkmepMUBAMYMDGkUAAAA%3D"
+									},
+									{
+										"key": "Cookie",
+										"type": "text",
+										"value": "77u%2FPD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48U1A%2BVjYsMGguZnxtZW1iZXJzaGlwfDEwMDNiZmZkOTZiNWY5N2ZAbGl2ZS5jb20sMCMuZnxtZW1iZXJzaGlwfHJhamVzaC5qZXlhcmFtYW5AcGxhdGZvcm0zc29sdXRpb25zLmNvbSwxMzIxMzgwNTc4NjAwMDAwMDAsMTMyMTM3OTkwNTQwMDAwMDAwLDEzMjEzODkyMjk3NjA1MDY2OCwwLjAuMC4wLDIsOTUwYWY0MTEtYTg2OS00ZmRiLWJlODUtOTI2ZGJhYmUzYzRmLCwsYjU1YTA3OWYtNDA3MC05MDAwLTdlNTctZDc2OGE1NDAyYzUwLGI1NWEwNzlmLTQwNzAtOTAwMC03ZTU3LWQ3NjhhNTQwMmM1MCwsMCwwLDAsLCwsVCt1V0V1YlY0UGlZV0ZJSERXUFVVN2VQTXdkRGxFWkJ5azlaZmZIdzZiYnltcS92c3QzU3lCMi9vcHhnVC9SOEtyN1AvWm5JdXpUY1ZNbmFCVmJmQU1uMHdvN1R5OU8yUHU0NmJkNTdYN094dFRNM1l4cEEwTm1BbzdkK0FEVFd0bFhxTmVyR3RqWjJMUTIzTkpKS1JFdTZBbmdQSm9qNE4yVnc3SStoS0RYcHBvd0l2dW02TWNBRHRVeXp2eGQvQStiTUQ2SGVLMDg0ZjFwSXNnc21EWFFxNEo5c2oyRHhhY1RMSUd3dHc1V3BTdGlXVmlCVFVnOWRQSHhvRVdWdWtNTCszUHZaZmNUT2xmYUZpcUVSYVZadWFPR3BVQXFUcXBMMUJzOUw5QXVlT3h2dGlFRHJvUkRMS1pxeHRBK3lmeUcxVFV1SFZZWWZFT1F4UUFqRGNnPT08L1NQPg%3D%3D"
+									},
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json;odata=verbose"
+									},
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/json;odata=verbose"
+									}
+								],
+								"url": {
+									"raw": "https://platform3solutionsllc.sharepoint.com/_api/contextinfo",
+									"protocol": "https",
+									"host": [
+										"platform3solutionsllc",
+										"sharepoint",
+										"com"
+									],
+									"path": [
+										"_api",
+										"contextinfo"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "pg_authenticate",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "",
+										"value": "authority: pgone.sharepoint.com",
+										"type": "text"
+									},
+									{
+										"key": "",
+										"value": "method: GET",
+										"type": "text"
+									},
+									{
+										"key": "",
+										"value": "path: /sites/ILM_Team_Collab/_layouts/15/Authenticate.aspx?Source=%2Fsites%2FILM%5FTeam%5FCollab",
+										"type": "text"
+									},
+									{
+										"key": "",
+										"value": "scheme: https",
+										"type": "text"
+									},
+									{
+										"key": "accept",
+										"value": " text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3",
+										"type": "text"
+									},
+									{
+										"key": "accept-encoding",
+										"value": " gzip, deflate, br",
+										"type": "text"
+									},
+									{
+										"key": "accept-language",
+										"value": " en-US,en;q=0.9",
+										"type": "text"
+									},
+									{
+										"key": "cache-control",
+										"value": " max-age=0",
+										"type": "text"
+									},
+									{
+										"key": "cookie",
+										"value": " rtFa=iW1QdGRdRXGjsMudMjrUgGrRJZpmfbK0r3UJbqxaR78mRTdBRERCRjQtMjQ4Qy00OTQ5LTg5RTItQjdFNzY1OTZEQjZEnJRo7ahxf7i13W2olj2eHGuf5g0LlXW+VExxl4fexarTzGKFC/HbxLv6WcvMIjsOlYgbtD3qwogeL3mpCjH+69GMuz+T6gtCljeFlU5Xf+VKEsUph/VVSG6Up5Gv/kszVFr96KzlLijnHDK1611DewInmb/mw78isrfRmTNnnMCK5g3LmLAlmAbAfz/GvwA8O4joB83sjcdfi0AbvziMZYYIvTz8HPFu5b9q+9B+aToAekZZl/sPzoPbUqxuUt1pBZYNfgGIv1aHqmuUlewxglBsI+cHVpcvB8Mgez8c4HfqQFF3br223KpMDKa7eJUgi7zSvR0koJwI/6Nn2DancEUAAAA=; FedAuth=77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48U1A+VjYsMGguZnxtZW1iZXJzaGlwfDEwMDMyMDAwNjE4NTQwYjJAbGl2ZS5jb20sMCMuZnxtZW1iZXJzaGlwfHJhdml0ZWphLm1fcGxhdGZvcm0zc29sdXRpb25zLmNvbSNleHQjQHBnb25lLm9ubWljcm9zb2Z0LmNvbSwxMzIxNDEzMTUzMjAwMDAwMDAsMCwxMzIxNDIzMTM3MDE5MjgwMzksMTc1LjEwMC4xNDkuNjYsMjA1MCxlN2FkZGJmNC0yNDhjLTQ5NDktODllMi1iN2U3NjU5NmRiNmQsLFYyITEwMDMyMDAwNjE4NTQwQjIhMTMyMTQxMzE1MzIsMTI5ZTA4OWYtNDBkMi05MDAwLTAzZDItYmE4YjZmZmMzNTc2LDEyOWUwODlmLTQwZDItOTAwMC0wM2QyLWJhOGI2ZmZjMzU3NiwsMCwxMzIxNDE0ODU3MDA2NzgwNjIsMTMyMTQ0MDQxNzAwNjc4MDYyLCwsLFhYdjh0SWhPa1MxUnQ0M2Vna0hXNmQxVm9ycDM2c2llSGRnNGVBUEpiODBkYjlmUU5sT2Z2SnhSMG1QNDcxN0t4eHNKTk1Fdi9CK3Rqa0VpMU11enRXb29aajJjdmtjV1p5MTE0Z3pFREpaQTUyRFFoRWFLOVlSU2l4eXJzbDE0d1hyeVVidUZ6ZG94Vy96R29NeXV3VGlSa05UbmNxUVNGYlZ5dzlYMkdaY0tDMVc1cEFuK1prUmd0SUxtSHJNbzJ3OHlhNEl2MVR4cGxuWUlPanFFS3Jic3h0ZTZJWkR5eVU5M1dCdkNsZE54SGdnZmZUNnoxa1NiVUIzU1MvcnN2RXRUR3k3NTVEV2NCeUFyNUphMGpESElkL0QvUStQUmk2MjRJQlZDNE80MUpwNnFvdjUweXlqVlFhVlZsTXQ5RzdXOU91QTFYaGdSOHp1SmowYm1IQT09PC9TUD4=",
+										"type": "text"
+									},
+									{
+										"key": "referer",
+										"value": " https://login.microsoftonline.com/",
+										"type": "text"
+									},
+									{
+										"key": "sec-fetch-mode",
+										"value": " navigate",
+										"type": "text"
+									},
+									{
+										"key": "sec-fetch-site",
+										"value": " cross-site",
+										"type": "text"
+									},
+									{
+										"key": "upgrade-insecure-requests",
+										"value": " 1",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://pgone.sharepoint.com/sites/ILM_Team_Collab/_api/lists",
+									"protocol": "https",
+									"host": [
+										"pgone",
+										"sharepoint",
+										"com"
+									],
+									"path": [
+										"sites",
+										"ILM_Team_Collab",
+										"_api",
+										"lists"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Generate Security Token Copy",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "text/plain",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<s:Envelope xmlns:a=\"http://www.w3.org/2005/08/addressing\" xmlns:s=\"http://www.w3.org/2003/05/soap-envelope\" xmlns:u=\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd\">\n\t<s:Header>\n\t\t<a:Action s:mustUnderstand=\"1\">http://schemas.xmlsoap.org/ws/2005/02/trust/RST/Issue</a:Action>\n\t\t<a:ReplyTo>\n\t\t\t<a:Address>http://www.w3.org/2005/08/addressing/anonymous</a:Address>\n\t\t</a:ReplyTo>\n\t\t<a:To s:mustUnderstand=\"1\">https://login.microsoftonline.com/extSTS.srf</a:To>\n\t\t<o:Security s:mustUnderstand=\"1\" xmlns:o=\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd\">\n\t\t\t<o:UsernameToken>\n\t\t\t\t<o:Username>raviteja.m@platform3solutions.com</o:Username>\n\t\t\t\t<o:Password>gxmldzgtchsjbbxq</o:Password>\n\t\t\t</o:UsernameToken>\n\t\t</o:Security>\n\t</s:Header>\n\t<s:Body>\n\t\t<t:RequestSecurityToken xmlns:t=\"http://schemas.xmlsoap.org/ws/2005/02/trust\">\n\t\t\t<wsp:AppliesTo xmlns:wsp=\"http://schemas.xmlsoap.org/ws/2004/09/policy\">\n\t\t\t\t<a:EndpointReference>\n\t\t\t\t\t<a:Address>https://pgone.sharepoint.com</a:Address>\n\t\t\t\t</a:EndpointReference>\n\t\t\t</wsp:AppliesTo>\n\t\t\t<t:KeyType>http://schemas.xmlsoap.org/ws/2005/05/identity/NoProofKey</t:KeyType>\n\t\t\t<t:RequestType>http://schemas.xmlsoap.org/ws/2005/02/trust/Issue</t:RequestType>\n\t\t\t<t:TokenType>urn:oasis:names:tc:SAML:1.0:assertion</t:TokenType>\n\t\t</t:RequestSecurityToken>\n\t</s:Body>\n</s:Envelope>",
+									"options": {
+										"raw": {
+											"language": "text"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://login.microsoftonline.com/extSTS.srf",
+									"protocol": "https",
+									"host": [
+										"login",
+										"microsoftonline",
+										"com"
+									],
+									"path": [
+										"extSTS.srf"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Platform3_SubSite",
+			"item": [
+				{
+					"name": "GetSubSiteFolders",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"type": "text",
+								"value": "{{rtFa}}"
+							},
+							{
+								"key": "Cookie",
+								"type": "text",
+								"value": "{{FedAuth}}"
+							},
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json;odata=verbose"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json;odata=verbose"
+							}
+						],
+						"url": {
+							"raw": "{{url}}{{subsite}}/_api/Web/GetFolderByServerRelativePath(decodedurl='{{subsite}}/Shared Documents')/Folders",
+							"host": [
+								"{{url}}{{subsite}}"
+							],
+							"path": [
+								"_api",
+								"Web",
+								"GetFolderByServerRelativePath(decodedurl='{{subsite}}",
+								"Shared Documents')",
+								"Folders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetSubSiteFiles",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"type": "text",
+								"value": "{{rtFa}}"
+							},
+							{
+								"key": "Cookie",
+								"type": "text",
+								"value": "{{FedAuth}}"
+							},
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json;odata=verbose"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json;odata=verbose"
+							}
+						],
+						"url": {
+							"raw": "{{url}}{{subsite}}/_api/Web/GetFolderByServerRelativePath(decodedurl='{{subsite}}/Shared Documents')/Files",
+							"host": [
+								"{{url}}{{subsite}}"
+							],
+							"path": [
+								"_api",
+								"Web",
+								"GetFolderByServerRelativePath(decodedurl='{{subsite}}",
+								"Shared Documents')",
+								"Files"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get2ndLevelSubsite",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"type": "text",
+								"value": "{{rtFa}}"
+							},
+							{
+								"key": "Cookie",
+								"type": "text",
+								"value": "{{FedAuth}}"
+							},
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json;odata=verbose"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json;odata=verbose"
+							}
+						],
+						"url": {
+							"raw": "https://platform3solutionsllc.sharepoint.com/sites/SharePointSubSiteExtractionTesting/_api/Web/GetSubwebsFilteredForCurrentUser(nWebTemplateFilter=-1)",
+							"protocol": "https",
+							"host": [
+								"platform3solutionsllc",
+								"sharepoint",
+								"com"
+							],
+							"path": [
+								"sites",
+								"SharePointSubSiteExtractionTesting",
+								"_api",
+								"Web",
+								"GetSubwebsFilteredForCurrentUser(nWebTemplateFilter=-1)"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get3rdLevelSubsite",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"type": "text",
+								"value": "{{rtFa}}"
+							},
+							{
+								"key": "Cookie",
+								"type": "text",
+								"value": "{{FedAuth}}"
+							},
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json;odata=verbose"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json;odata=verbose"
+							}
+						],
+						"url": {
+							"raw": "https://platform3solutionsllc.sharepoint.com/sites/SharePointSubSiteExtractionTesting/2ndLevelSubsite/_api/Web/GetSubwebsFilteredForCurrentUser(nWebTemplateFilter=-1)",
+							"protocol": "https",
+							"host": [
+								"platform3solutionsllc",
+								"sharepoint",
+								"com"
+							],
+							"path": [
+								"sites",
+								"SharePointSubSiteExtractionTesting",
+								"2ndLevelSubsite",
+								"_api",
+								"Web",
+								"GetSubwebsFilteredForCurrentUser(nWebTemplateFilter=-1)"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "ef022b63-0fd7-4aca-a681-7d355b87dc52",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "324e4ecd-e800-40f3-8132-bc8d7e176e16",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "QueryRefinementFilter",
+			"item": [
+				{
+					"name": "FilterSiteTiltePath",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json;odata=verbose",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json;odata=verbose",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"__metadata\": {\n    \"type\": \"Microsoft.Office.Server.Search.REST.SearchRequest\"\n  },\n  \"Querytext\": \"sites\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://platform3solutionsllc.sharepoint.com/_api/search/query?querytext=%27contentclass:STS_Site%27&selectproperties=%27Title,Path%27&rowlimit=5000&Content-Type=application/json;odata=verbose&Accept=application/json;odata=verbose",
+							"protocol": "https",
+							"host": [
+								"platform3solutionsllc",
+								"sharepoint",
+								"com"
+							],
+							"path": [
+								"_api",
+								"search",
+								"query"
+							],
+							"query": [
+								{
+									"key": "querytext",
+									"value": "%27contentclass:STS_Site%27"
+								},
+								{
+									"key": "selectproperties",
+									"value": "%27Title,Path%27"
+								},
+								{
+									"key": "rowlimit",
+									"value": "5000"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;odata=verbose"
+								},
+								{
+									"key": "Accept",
+									"value": "application/json;odata=verbose"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	]
+}

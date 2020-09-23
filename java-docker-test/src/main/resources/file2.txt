@@ -1,0 +1,1 @@
+File name is file1.txt inside dir dir1
