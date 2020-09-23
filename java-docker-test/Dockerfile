@@ -2,21 +2,15 @@ FROM docker-registry2.platform3solutions.com/archon/alpine-java:11
 
 VOLUME /tmp
 
-ARG PORT=8109
+ARG DOCKER_TESTS_JAR=./target/java-docker-test-0.0.1-SNAPSHOT.jar
 
-ARG USER_SERVICE_JAR=./target/archon-datasource-analyzer-service-DEV-SNAPSHOT.jar
-
-COPY ${USER_SERVICE_JAR} start-archon-datasource-analyzer.sh /tmp/
+COPY ${DOCKER_TESTS_JAR} start-script.sh /tmp/
 
 ENV APP_HOME /tmp/
-ENV PORT ${PORT}
-
-EXPOSE ${PORT}
+ENV SOURCE_PATH /home/ubuntu/
 
 RUN apk update \
-    && apk add --update ttf-ubuntu-font-family --no-cache bash  \
-    && chmod a+x /tmp/*.sh \
-    && mv /tmp/start-archon-datasource-analyzer.sh /usr/bin \
+    && mv /tmp/start-script.sh /usr/bin \
     && rm /tmp/*
 
-ENTRYPOINT [ "start-archon-datasource-analyzer.sh" ]
+ENTRYPOINT [ "start-script.sh" ]

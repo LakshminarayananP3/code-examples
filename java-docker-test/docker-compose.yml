@@ -1,19 +1,11 @@
 version: '3.7'
 services: 
   archon_datasource_analyzer_service:
-    container_name: archon_datasource_analyzer_service
+    container_name: java-docker-test
     build:
       context: .
       dockerfile: Dockerfile
-    image: p3solutions/archon-datasource-analyzer:3.1.peoplesoft24072020
-    expose:
-        - 8109
-    ports:
-        - 8109:8109
-    networks:
-        - archon-network
-    env_file: 
-      - archon-datasource-analyzer.env
+    image: p3solutions/java-docker-test:javaDockerTest
 networks:
     archon-network:
         driver: bridge
