@@ -1,0 +1,67 @@
+<configuration debug="false">
+
+  <property name="LOGS_DIR" value="${logsdir:-logs/xdbserver}" />
+  <property name="DATEFORMAT" value="yyyy-MM-dd HH:mm:ss.SSS" />
+  <property name="CONSOLE_PATTERN" value="%d{${DATEFORMAT}} - %-5level %msg%n" />
+  <property name="FILE_PATTERN" value="%d{${DATEFORMAT}} %-5level %-50logger{36} - %msg%n" />
+
+  <property name="ARCHIVED_LOGS_DIR" value="${LOGS_DIR}/archives"/>
+
+  <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <file>${LOGS_DIR}/xdbserver.log</file>
+      <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+      <fileNamePattern>${ARCHIVED_LOGS_DIR}/log-%d{yyyy-MM-dd}.%i.log.gz</fileNamePattern>
+      <maxFileSize>1MB</maxFileSize>
+      <maxHistory>60</maxHistory>
+      <totalSizeCap>20GB</totalSizeCap>
+    </rollingPolicy>
+    <encoder>
+      <pattern>${FILE_PATTERN}</pattern>
+    </encoder>
+     <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+      <level>DEBUG</level>
+    </filter>
+  </appender>
+ 
+  <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+    <encoder>
+      <pattern>${CONSOLE_PATTERN}</pattern>
+    </encoder>
+    <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+      <level>INFO</level>
+    </filter>
+  </appender>
+
+  <appender name="GEMALTO" class="ch.qos.logback.core.FileAppender">
+    <file>${LOGS_DIR}/gemalto.log</file>
+    <encoder>
+      <pattern>${FILE_PATTERN}</pattern>
+    </encoder>
+    <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+      <level>DEBUG</level>
+    </filter>
+  </appender>
+
+  <logger name="com.emc.ia.xdb" additivity="false" level="DEBUG">
+    <appender-ref ref="FILE" />
+  </logger>
+
+  <logger name="com.ot.infoarchive.decrypt.impl.SafenetCustomLogger" additivity="false" level="INFO">
+    <appender-ref ref="GEMALTO" />
+  </logger>
+
+  <logger name="com.ot.infoarchive.decrypt" additivity="false" level="DEBUG">
+    <appender-ref ref="FILE" />
+  </logger>
+
+  <logger name="com.xhive.core" additivity="false" level="WARN">
+    <appender-ref ref="FILE" />
+    <appender-ref ref="CONSOLE" />
+  </logger>
+
+  <root level="WARN">
+    <appender-ref ref="CONSOLE" />
+    <appender-ref ref="FILE" />
+  </root>
+
+</configuration>
